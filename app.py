@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request,jsonify
 from flask_cors import CORS,cross_origin
+import os
 import requests
 from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen as uReq # uReq is the alias or object / variable of urlopen
@@ -87,7 +88,12 @@ def index():
         return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=8000, debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Get port from Heroku, default to 5000 locally
+    app.run(host="0.0.0.0", port=port, debug=True)
+
+
+
+
     #app.run(host='127.0.0.1', port=80, debug=True)
 	#app.run(debug=True)
 
