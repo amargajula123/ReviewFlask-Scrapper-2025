@@ -3,4 +3,8 @@
   <component name="Black">
     <option name="sdkName" value="ReviewFlask_env" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="ReviewFlask_env_3" project-jdk-type="Python SDK" />
+>>>>>>> fe0a16e ( Added exception , logger ,Procfile ,templates ,test)
 </project>

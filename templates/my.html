@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Page</title>
+</head>
+<body>
+    <h2>Search Product</h2>
+    <form method="POST" action="/search">
+        <input type="text" name="content" placeholder="Enter product name">
+        <button type="submit">Search</button>
+    </form>
+
+    {% if result %}
+    <p>You searched for : <strong>{{ result }}</strong></p>
+    {% endif %}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Search</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h2>Search Product</h2>-->
+<!--    <form method="POST" action="/search">-->
+<!--        <input type="text" name="content" placeholder="Enter product name">-->
+<!--        <button type="submit">Search</button>-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->
+

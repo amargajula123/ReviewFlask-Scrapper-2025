@@ -34,6 +34,14 @@
         padding: 15px 0;
         text-align: center;
     }
+
+    /* ✅ Error message styling */
+    .error-message {
+        color: red;
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+    }
 </style>
 {% endblock %}
 
@@ -46,6 +54,11 @@
             <input type="text" name="content" id="content">
             <input type="submit" value="Call_review">
         </form>
+
+        <!-- ✅ Error display block -->
+        {% if error %}
+            <p class="error-message">{{ error }}</p>
+        {% endif %}
     </div>
 </div>
 
@@ -57,7 +70,7 @@
         <a href="YOUR_HEROKU_LINK" target="_blank">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg"
                  alt="Heroku">
-        </a> <!-- Heroku (Fixed size to match other icons) -->
+        </a> <!-- Heroku -->
 
         <a href="YOUR_YOUTUBE_LINK" target="_blank"><i class="fa-brands fa-youtube" style="color: red;"></i></a>  <!-- YouTube -->
         <a href="YOUR_LINKEDIN_LINK" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0A66C2;"></i></a>  <!-- LinkedIn -->
